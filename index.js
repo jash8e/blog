@@ -21,7 +21,7 @@ router.use('/', home.routes(), home.allowedMethods())
 
 app.use(router.routes()).use(router.allowedMethods())
 
-let port = process.env.PORT || 3000
+let port = process.env.PORT || 80
 
 app.listen(port,() => {
     console.log(`koa server start@port: ${port}`)
